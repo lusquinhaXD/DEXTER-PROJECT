@@ -237,35 +237,6 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('techshop_cart', JSON.stringify(state.cart));
     }
 
-    
-    /** Retorna uma lista de produtos "fake" (mock) para o primeiro carregamento */
-    function getInitialProducts() {
-        return [
-            {
-                id: '1',
-                name: 'Notebook Pro X1',
-                price: 7499.90,
-                img: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.brazilpc.com.br%2Fnotebook-com-intel-i5-8gb-ram-hd-500gb-tela-156-prata&psig=AOvVaw2p22vWiSOic-yeFmf8CBjn&ust=1763157378999000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCODu6KmP8JADFQAAAAAdAAAAABAE',
-                description: 'O Notebook Pro X2 é a ferramenta definitiva para profissionais. Com processador ultrarrápido, 32GB de RAM e tela 4K, sua produtividade não terá limites.'
-            },
-            {
-                id: '2',
-                name: 'Smartphone Top S25',
-                price: 4899.00,
-                img: 'https://placehold.co/600x400/e2e8f0/333?text=Smartphone',
-                description: 'Capture momentos incríveis com a câmera de 108MP do Top S25. Tela AMOLED de 120Hz e bateria que dura o dia todo.'
-            },
-            {
-                id: '3',
-                name: 'Fone de Ouvido BassMax',
-                price: 899.50,
-                img: 'https://placehold.co/600x400/e2e8f0/333?text=Fone+de+Ouvido',
-                description: 'Cancelamento de ruído ativo e som imersivo. O BassMax é perfeito para músicas, podcasts e chamadas em qualquer ambiente.'
-            },
-        ];
-    }
-
-    
     // ---------------------------------------------------------------------
     // FUNÇÕES DE RENDERIZAÇÃO (Desenhar na tela)
     // ---------------------------------------------------------------------
