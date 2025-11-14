@@ -43,29 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
         addProductForm: document.getElementById('add-product-form'),
     };
 
-    
-    // ---------------------------------------------------------------------
-    // FUNÇÃO DE INICIALIZAÇÃO
-    // ---------------------------------------------------------------------
-    /*
-     * A função 'init' (iniciar) é o ponto de partida. Ela organiza o que 
-     * deve acontecer assim que a página carrega.
-     */
-    function init() {
-        
-        // 1. Carrega dados salvos do LocalStorage (carrinho, produtos)
-        loadStateFromLocalStorage();
-        
-        // 2. "Desenha" os produtos, o carrinho e a lista de admin na tela
-        renderProductGrid();
-        renderCart();
-        renderAdminProductList();
-        
-        // 3. Configura todos os "ouvintes de evento" (cliques em botões, envios de formulário, etc.)
-        setupEventListeners();
-    }
-
-    
     // ---------------------------------------------------------------------
     // CONFIGURAÇÃO DOS EVENT LISTENERS (OUVINTES DE EVENTO)
     // ---------------------------------------------------------------------
@@ -576,6 +553,27 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Não redireciona, o usuário agora pode fazer login
         // showPage('page-login'); // Esta linha já estava comentada, mas é uma opção
+    }
+
+        // ---------------------------------------------------------------------
+    // FUNÇÃO DE INICIALIZAÇÃO
+    // ---------------------------------------------------------------------
+    /*
+     * A função 'init' (iniciar) é o ponto de partida. Ela organiza o que 
+     * deve acontecer assim que a página carrega.
+     */
+    function init() {
+        
+        // 1. Carrega dados salvos do LocalStorage (carrinho, produtos)
+        loadStateFromLocalStorage();
+        
+        // 2. "Desenha" os produtos, o carrinho e a lista de admin na tela
+        renderProductGrid();
+        renderCart();
+        renderAdminProductList();
+        
+        // 3. Configura todos os "ouvintes de evento" (cliques em botões, envios de formulário, etc.)
+        setupEventListeners();
     }
 
 
